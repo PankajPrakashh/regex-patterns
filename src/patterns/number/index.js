@@ -1,4 +1,4 @@
-import { RegexPatterns } from '../../typings';
+/// <reference path="../../../typings/index.d.ts" />
 
 export class NumberPatterns {
 
@@ -26,8 +26,8 @@ export class NumberPatternBuilder {
 
   /**
    * 
-   * @param {RegexPatterns.IRange} magnitude 
-   * @param {RegexPatterns.IRange} precision 
+   * @param {IRange} magnitude 
+   * @param {IRange} precision 
    * @param {boolean} allowSign 
    * @returns 
    */

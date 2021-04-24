@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
+    "module": "commonJS",
+    "target": "es2017",
     "checkJs": true,
-    "baseUrl": "./",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./typings"
-    ]
+    "baseUrl": "."
   },
   "exclude": ["node_modules", "typings"],
-  "compileOnSave": true,
+  "include": ["./src/**/*"],
+  "compileOnSave": true
 }
