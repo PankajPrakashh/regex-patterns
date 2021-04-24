@@ -10,14 +10,24 @@ describe('Number patterns', () => {
     // Positive testing
     TestData.validWholeNumbers.forEach(n => {
       test(`${n} is a whole number`, () => {
-        expect(NumberPatterns.wholeNumber.test(`${n}`)).toBeTruthy();
+        expect(NumberPatterns.wholeNumber(false).test(`${n}`)).toBeTruthy();
+      });
+    });
+    TestData.validWholeNumbersWithSign.forEach(n => {
+      test(`${n} is a whole number`, () => {
+        expect(NumberPatterns.wholeNumber(true).test(`${n}`)).toBeTruthy();
       });
     });
   
     // Negative testing
     TestData.invalidWholeNumbers.forEach(n => {
       test(`${n} is not a whole number`, () => {
-        expect(NumberPatterns.wholeNumber.test(`${n}`)).toBeFalsy();
+        expect(NumberPatterns.wholeNumber(false).test(`${n}`)).toBeFalsy();
+      });
+    });
+    TestData.invalidWholeNumbersWithSign.forEach(n => {
+      test(`${n} is not a whole number`, () => {
+        expect(NumberPatterns.wholeNumber(true).test(`${n}`)).toBeFalsy();
       });
     });
   });

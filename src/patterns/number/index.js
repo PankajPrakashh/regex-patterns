@@ -2,12 +2,10 @@
 
 export class NumberPatterns {
 
-  static get wholeNumber() {
-    return /^\d+$/;
-  }
-
-  static get wholeNumberWithSign() {
-    return /^[\-|\+]?\d+$/;
+  static wholeNumber(allowSign = true) {
+    return allowSign 
+      ? /^\+?\d+$/
+      : /^\d+$/;
   }
 
   static get decimal() {
