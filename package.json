@@ -1,0 +1,27 @@
+{
+  "name": "@jsguru/regex-patterns",
+  "version": "0.0.0",
+  "description": "Compilation of commonly used regex patterns in Javascript/Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PankajPrakashh/regex-patterns.git"
+  },
+  "keywords": [
+    "Regex",
+    "Regex patterns",
+    "Common regex patterns",
+    "Javascript regex patterns",
+    "Typescript regex patterns"
+  ],
+  "author": "Pankaj Prakash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PankajPrakashh/regex-patterns/issues"
+  },
+  "homepage": "https://github.com/PankajPrakashh/regex-patterns#readme",
+  "dependencies": { }
+}
