@@ -1,0 +1,8 @@
+{
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "material-icon-theme.activeIconPack": "angular_ngrx"
+}
