@@ -60,5 +60,16 @@ export class NumberPatterns {
     return /([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[eE]([+-]?\d+))?/;
   }
 
-  // Match roman numerals
+  /**
+   * Matches a roman numeral
+   * @link https://regexr.com/5slgu
+   * @source https://stackoverflow.com/a/267405/2401088
+   */
+  static get romanNumeral() {
+    return /^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
+  }
+
+  // Binary numeral
+  // Hexadecimal numeral
+  // Octal numeral
 }
